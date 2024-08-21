@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 03</title>
+    <!-- google font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome icon cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- customize configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              bgImage: "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <header class="bg-gradient-to-b from-gray-100 to-gray-0">
+      <div class="w-11/12 mx-auto">
+        <!-- navbar -->
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start">
+              <!-- logo -->
+              <a class="flex items-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-300 p-2 rounded-full mr-2"></i> <span class="font-bold text-2xl md:text-3xl">Rinterio</span>
+              </a>
+            </div>
+            <!-- menu bar -->
+            <div class="navbar-center hidden lg:block">
+              <ul class="menu menu-horizontal px-1 text-gray-500 font-medium">
+                <li class="font-bold text-gray-950"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="hidden md:block">
+                <div class="flex items-center gap-4">
+                  <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full cursor-pointer"></i>
+                  <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full  cursor-pointer"></i>
+                  <div class="bg-lime-300 py-2 px-4 rounded-full">
+                    <button class="text-xl font-bold text-nowrap">Book Consult <i class="fa-solid fa-arrow-right ml-2 bg-black text-white p-1 rounded-full -rotate-45"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown menu -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="lg:hidden">
+                  <!-- menu bar icon -->
+                  <a href="#">
+                    <i class="fa-solid fa-bars bg-white p-2 rounded-full md:ml-3" title="Menu"></i>
+                  </a>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 font-medium space-y-2"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
