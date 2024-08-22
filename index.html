@@ -34,6 +34,7 @@
             colors: {
               clifford: "#da373d",
               textColor: "#212121",
+              aboutUs: "#F4F4F4",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -118,26 +119,99 @@
         <!-- banner section -->
         <section class="banner my-10">
           <!-- image container -->
-           <div>
-             <img class="mx-auto" src="assets/banner.png" alt="">
-           </div>
-           <!-- text container -->
-            <div class="text-center space-y-5 md:space-y-8 mt-4">
-              <h1 class="text-textColor font-extrabold text-3xl md:text-5xl lg:text-6xl leading-tight">
-                A barn house of this design has a striking appearance
-              </h1>
-              <p class="font-medium text-gray-500 md:w-5/6 mx-auto leading-7">A barn house of this design has a striking appearance, characterized by its classic silhouette and contemporary features. The structure seamlessly blends traditional rural aesthetics with modern architectural elements.</p>
-              <div>
-                <button class="bg-lime-200 text-xl font-extrabold rounded-full py-2 px-5 text-textColor w-full md:w-fit">
-                  View Details 
-                  <i class="fa-solid fa-arrow-right -rotate-45 ml-1 bg-lime-400 p-2 rounded-full"></i> 
-                </button>
-              </div>
+          <div>
+            <img class="mx-auto" src="assets/banner.png" alt="" />
+          </div>
+          <!-- text container -->
+          <div class="text-center space-y-5 md:space-y-8 mt-4">
+            <h1
+              class="text-textColor font-extrabold text-3xl md:text-5xl lg:text-6xl leading-tight"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <p class="font-medium text-gray-500 md:w-5/6 mx-auto leading-7">
+              A barn house of this design has a striking appearance,
+              characterized by its classic silhouette and contemporary features.
+              The structure seamlessly blends traditional rural aesthetics with
+              modern architectural elements.
+            </p>
+            <div>
+              <button
+                class="bg-lime-200 text-xl font-extrabold rounded-full py-2 px-5 text-textColor w-full md:w-fit"
+              >
+                View Details
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 ml-1 bg-lime-400 p-2 rounded-full"
+                ></i>
+              </button>
             </div>
+          </div>
         </section>
       </div>
     </header>
-    <main></main>
+
+    <main>
+      <div class="bg-aboutUs my-24 py-14 lg:py-8">
+        <section class="aboutUs w-11/12 mx-auto">
+          <!-- Vector image-->
+          <div class=" hidden lg:block w-24 py-10 pb-4 -ml-5">
+            <img src="assets/Vector.png" alt="" />
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- about us -->
+            <div>
+              <!-- about us capsule -->
+               <div class="flex justify-center lg:justify-start">
+                 <div class="bg-white py-1 px-4 rounded-full text-center inline-block">
+                   <i class="fa-solid fa-arrow-right mr-2"></i> <span class="font-bold">About Us</span>
+                 </div>
+               </div>
+              <!-- about text container -->
+               <div class="space-y-4 my-3 text-center lg:text-left">
+                <h1 class="text-textColor font-extrabold text-2xl lg:text-4xl ">
+                We design thoughtful, liveable spaces
+              </h1>
+              <p class="font-medium text-gray-500 text-sm">
+                Creating thoughtful, livable spaces that blend functionality with beauty. Every detail is designed to enhance your daily life.
+              </p>
+               </div>
+              <!-- card -->
+               <div class="mt-6 md:flex md:justify-center md:items-center md:mt-0 md-space-y-0 md:gap-3 lg:block">
+                <!-- card-1 -->
+                 <div>
+                  <!-- img -->
+                   <div class="bg-white p-6 rounded-lg flex gap-6 items-start lg:items-center mb-4 md:mb-0 lg:mb-4 shadow">
+                    <img class="w-12 lg:w-auto" src="assets/commercial.png" alt="">
+                    <!-- text container -->
+                     <div class="space-y-2">
+                      <h1 class="font-extrabold text-lg">Commercial</h1>
+                      <p class="text-sm">Crafting innovative commercial spaces that inspire productivity and reflect your brand's identity.</p>
+                     </div>
+                   </div>
+                 </div>
+                 <!-- card-2 -->
+                  <div>
+                  <!-- img -->
+                   <div class="bg-white p-6 rounded-lg flex gap-6 items-start lg:items-center shadow">
+                    <img class="w-12 lg:w-auto" src="assets/residential.png" alt="">
+                    <!-- text container -->
+                     <div class="space-y-2">
+                      <h1 class="font-extrabold text-lg">Residential</h1>
+                      <p class="text-sm">Designing elegant residential spaces that blend comfort with style.</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+            <!-- about us image -->
+             <div>
+              <img class="w-full h-full" src="assets/Rectangle.png" alt="">
+             </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
