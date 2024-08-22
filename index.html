@@ -33,6 +33,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              textColor: "#212121",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -53,8 +54,11 @@
           <div class="navbar">
             <div class="navbar-start">
               <!-- logo -->
-              <a class="flex items-center">
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-300 p-2 rounded-full mr-2"></i> <span class="font-bold text-2xl md:text-3xl">Rinterio</span>
+              <a href="#" class="flex items-center" title="Rinterio">
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-lime-300 p-2 rounded-full mr-2"
+                ></i>
+                <span class="font-bold text-2xl md:text-3xl">Rinterio</span>
               </a>
             </div>
             <!-- menu bar -->
@@ -70,10 +74,19 @@
             <div class="navbar-end">
               <div class="hidden md:block">
                 <div class="flex items-center gap-4">
-                  <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full cursor-pointer"></i>
-                  <i class="fa-solid fa-cart-shopping bg-white p-2 rounded-full  cursor-pointer"></i>
+                  <i
+                    class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full cursor-pointer"
+                  ></i>
+                  <i
+                    class="fa-solid fa-cart-shopping bg-white p-2 rounded-full cursor-pointer"
+                  ></i>
                   <div class="bg-lime-300 py-2 px-4 rounded-full">
-                    <button class="text-xl font-bold text-nowrap">Book Consult <i class="fa-solid fa-arrow-right ml-2 bg-black text-white p-1 rounded-full -rotate-45"></i></button>
+                    <button class="text-xl font-bold text-nowrap">
+                      Book Consult
+                      <i
+                        class="fa-solid fa-arrow-right ml-2 bg-black text-white p-1 rounded-full -rotate-45"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -82,7 +95,10 @@
                 <div tabindex="0" role="button" class="lg:hidden">
                   <!-- menu bar icon -->
                   <a href="#">
-                    <i class="fa-solid fa-bars bg-white p-2 rounded-full md:ml-3" title="Menu"></i>
+                    <i
+                      class="fa-solid fa-bars bg-white p-2 rounded-full md:ml-3"
+                      title="Menu"
+                    ></i>
                   </a>
                 </div>
                 <ul
@@ -99,8 +115,27 @@
             </div>
           </div>
         </nav>
+        <!-- banner section -->
+        <section class="banner my-10">
+          <!-- image container -->
+           <div>
+             <img class="mx-auto" src="assets/banner.png" alt="">
+           </div>
+           <!-- text container -->
+            <div class="text-center space-y-5 md:space-y-8 mt-4">
+              <h1 class="text-textColor font-extrabold text-3xl md:text-5xl lg:text-6xl leading-tight">
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="font-medium text-gray-500 md:w-5/6 mx-auto leading-7">A barn house of this design has a striking appearance, characterized by its classic silhouette and contemporary features. The structure seamlessly blends traditional rural aesthetics with modern architectural elements.</p>
+              <div>
+                <button class="bg-lime-200 text-xl font-extrabold rounded-full py-2 px-5 text-textColor w-full md:w-fit">
+                  View Details 
+                  <i class="fa-solid fa-arrow-right -rotate-45 ml-1 bg-lime-400 p-2 rounded-full"></i> 
+                </button>
+              </div>
+            </div>
+        </section>
       </div>
-      
     </header>
     <main></main>
     <footer></footer>
